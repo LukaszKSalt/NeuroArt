@@ -37,7 +37,7 @@ jobs:
       - name: Azure Web App Deploy
         uses: azure/webapps-deploy@v2
         with:
-          app-name: NeuroArt
+          app-name: NeuroArtBackend
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: '${{ github.workspace }}/backend/target/*.jar'
           env: 'OPENAI_KEY=${{ secrets.OPENAI_KEY }}'
@@ -47,4 +47,4 @@ jobs:
         with:
           azcliversion: 2.30.0
           inlineScript: |
-            az webapp restart --name NeuroArt --resource-group neuroArtResourceGroup
+            az webapp restart --name NeuroArtBackend --resource-group NeuroArt
