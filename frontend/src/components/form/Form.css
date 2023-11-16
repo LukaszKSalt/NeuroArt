@@ -1,0 +1,13 @@
+.dropdown{
+    margin-top: 2em;
+}
+form{
+    width: 100%;
+}
+@media screen and (min-width: 1025px) {
+form{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+}

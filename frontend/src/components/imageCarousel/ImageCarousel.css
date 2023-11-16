@@ -1,0 +1,47 @@
+.imagecarousel {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    touch-action: pan-y;
+}
+
+.imagecarousel__list {
+    display: flex;
+    min-width: 100%;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease-out;
+}
+
+.imagecarousel__list.swiping {
+    transition: none;
+}
+
+.imagecarousel__indicator{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.imagecarousel__indicator-item {
+    width: 1em;
+    height: 1em;
+    margin: 0 0.5em;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.imagecarousel__indicator-item.active {
+    background-color: white;
+}
+
+.imagecarousel__button-delete {
+    height: 3em;
+    width: 3em;
+    position: relative;
+}

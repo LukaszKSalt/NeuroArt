@@ -1,0 +1,22 @@
+@media screen and (min-width: 1025px) {
+
+    .collectionshare__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        place-items: center;
+    }
+
+    .collectionshare {
+        margin-top: 10em;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .collectionshare__img {
+        width: 90%;
+        height: 90%;
+        border-radius: 2em;
+    }
+
+}

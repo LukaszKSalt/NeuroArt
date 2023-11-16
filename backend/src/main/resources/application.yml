@@ -1,0 +1,41 @@
+debug: true
+server:
+  error:
+    include-stacktrace: never
+  ssl:
+    enabled: false
+spring:
+  sql:
+    init:
+      platform: postgresql
+      mode: always
+    output:
+      ansi:
+        enabled: always
+  datasource:
+    url: jdbc:postgresql://dumbo.db.elephantsql.com:5432/${PGSQL_DB}
+    username: ${PGSQL_USERNAME}
+    password: ${PGSQL_PASSWORD}
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
+          issuer-uri: https://accounts.google.com
+
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
+openaikey: ${OPENAI_KEY}
+imgbbkey: ${IMGBB_KEY}

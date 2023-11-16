@@ -1,0 +1,37 @@
+.gallery__carousel-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+}
+
+.gallery__image {
+    width: 80%;
+    margin-top: 2em;
+    border: 1em solid rgba(0, 0, 0, 0.95);
+}
+
+.gallery__image:hover {
+    transition: 0.5s;
+    border: 1em solid rgba(103, 101, 101, 0.5);
+}
+
+.gallery__image-container {
+    margin: 3em 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.imagecarousel__button-delete {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery__carousel-container {
+        margin-top: 15em;
+    }
+}

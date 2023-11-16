@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://trumpet.db.elephantsql.com:5432/mfxbjraz
+    username: mfxbjraz
+    password: 8UBBsIE525Qevsz-8yG6cpe06rUoRYGg

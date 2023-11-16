@@ -1,0 +1,47 @@
+.button__share {
+    align-items: center;
+    appearance: none;
+    background-color: rgb(11, 11, 11);
+    border: 1px solid #989898;
+    border-radius: .375em;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 0.5em;
+    font-family: Poppins-Light;
+    font-size: 0.8rem;
+    height: 2em;
+    width: fit-content;
+    justify-content: center;
+    line-height: 1.5;
+    padding: calc(.5em - 1px) 1em;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.button__share:active {
+    border-color: #ffffff;
+    outline: 0;
+}
+
+.button__share:focus {
+    border-color: rgba(76, 199, 72, 0.55);
+    outline: 0;
+}
+
+.button__share:hover {
+    border-color: #ffffff;
+
+}
+
+.button__share:focus:not(:active) {
+    box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+
