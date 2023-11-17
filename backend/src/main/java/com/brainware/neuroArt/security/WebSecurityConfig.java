@@ -36,7 +36,7 @@ public class WebSecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(Arrays.asList(
                 "http://localhost:3000",
-                "https://blue-sky-0e47a0403.2.azurestaticapps.net"));
+                "https://mango-cliff-0ac4f4f03.4.azurestaticapps.net"));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
         configuration.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
