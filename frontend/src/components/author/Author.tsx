@@ -15,7 +15,7 @@ const Author = (props: AuthorInfo) => {
 
     useEffect(() => {
         async function fetchImages() {
-            const response = await fetch("https://neuroart.azurewebsites.net/user");
+            const response = await fetch("https://neuroartbackend.azurewebsites.net/user");
             const data = await response.json();
             setAuthorImages(data.collectionList[0].images);
         }

@@ -42,7 +42,7 @@ const Generate = (props: generateProps) => {
         }
         setIsLoading(true)
         const response = await fetch(
-            "https://neuroart.azurewebsites.net/generate",
+            "https://neuroartbackend.azurewebsites.net/generate",
             {
                 method: 'POST',
                 headers: {

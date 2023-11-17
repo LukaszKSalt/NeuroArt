@@ -30,7 +30,7 @@ const ImageContainer = (props: ImageContainerProps) => {
             description: props.inputDescription,
         };
 
-        const response = await fetch("https://neuroart.azurewebsites.net/image", {
+        const response = await fetch("https://neuroartbackend.azurewebsites.net/image", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

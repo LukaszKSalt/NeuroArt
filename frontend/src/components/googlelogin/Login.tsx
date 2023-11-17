@@ -35,7 +35,7 @@ const Login = (props: loginProps) => {
     const handleLogin = async (credentials: CredentialResponse) => {
         setIsLoading(true)
         const response = await fetch(
-            "https://neuroart.azurewebsites.net/user",
+            "https://neuroartbackend.azurewebsites.net/user",
             {
                 method: 'POST',
                 headers: {'Authorization': `Bearer ${credentials.credential}`},
@@ -57,7 +57,7 @@ const Login = (props: loginProps) => {
 
     async function deleteImage(event: React.MouseEvent<HTMLButtonElement>, id: string) {
         event.preventDefault();
-        await fetch(`https://neuroart.azurewebsites.net/image/${id}`,
+        await fetch(`https://neuroartbackend.azurewebsites.net/image/${id}`,
             {
                 method: "DELETE",
                 headers: {'Authorization': `Bearer ${props.credentials?.credential}`},

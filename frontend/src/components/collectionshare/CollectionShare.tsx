@@ -16,7 +16,7 @@ const CollectionShare = () => {
     const [hoveredImage, setHoveredImage] = useState<number | null>(null);
 
     useEffect(() => {
-        fetch(`https://neuroart.azurewebsites.net/collection/${id}`)
+        fetch(`https://neuroartbackend.azurewebsites.net/collection/${id}`)
             .then(response => response.json())
             .then(data => {
                 const collection: CollectionShare = data;

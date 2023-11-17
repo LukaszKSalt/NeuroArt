@@ -8,7 +8,7 @@ const ImageShare = () => {
     let {id} = useParams();
 
     useEffect(() => {
-        fetch(`https://neuroart.azurewebsites.net/image/${id}`)
+        fetch(`https://neuroartbackend.azurewebsites.net/image/${id}`)
             .then(response => response.json())
             .then(data => {
                 const image: Image = data

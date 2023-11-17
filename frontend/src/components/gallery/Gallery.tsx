@@ -18,7 +18,7 @@ const Gallery = () => {
 
     useEffect(() => {
         async function fetchImages() {
-            const response = await fetch("https://neuroart.azurewebsites.net/gallery");
+            const response = await fetch("https://neuroartbackend.azurewebsites.net/gallery");
             const images: Image[] = await response.json();
             setImages(images);
         }
