@@ -21,7 +21,7 @@ public class WebSecurityConfig {
         http
                 .cors().and()
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/gallery", "/check", "/user", "/generate").permitAll()
+                        .requestMatchers("/gallery", "/check", "/user").permitAll()
                         .requestMatchers(HttpMethod.GET, "/image/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/collection/**").permitAll()
                         .anyRequest().authenticated()
