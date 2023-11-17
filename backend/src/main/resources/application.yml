@@ -1,9 +1,11 @@
 debug: true
+
 server:
   error:
     include-stacktrace: never
   ssl:
     enabled: false
+
 spring:
   sql:
     init:
@@ -13,9 +15,9 @@ spring:
       ansi:
         enabled: always
   datasource:
-    url: jdbc:postgresql://dumbo.db.elephantsql.com:5432/${PGSQL_DB}
-    username: ${PGSQL_USERNAME}
-    password: ${PGSQL_PASSWORD}
+    url: jdbc:postgresql://ella.db.elephantsql.com:5432/${POSTGRESQL_DATABASE}
+    username: ${POSTGRESQL_USERNAME}
+    password: ${POSTGRESQL_PASSWORD}
     hikari:
       connection-timeout: 20000
       maximum-pool-size: 5
@@ -37,5 +39,6 @@ logging:
       springframework:
         boot:
           autoconfigure: ERROR
+
 openaikey: ${OPENAI_KEY}
 imgbbkey: ${IMGBB_KEY}
