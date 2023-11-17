@@ -27,7 +27,7 @@ const AppContainer = () => {
                 <ScrollToTop/>
             </div>
             <div>
-                <GoogleOAuthProvider clientId={"946318872366-410nr0nld5sghv8r8nntkllokcritu06.apps.googleusercontent.com"}>
+                <GoogleOAuthProvider clientId={"723361183262-43kos0kj551l88gdsfmp9ipno2uh4ada.apps.googleusercontent.com"}>
                 <Routes>
                     <Route path='/image/:id' element={<ImageShare/>}/>
                     <Route path='/collection/:id' element={<CollectionShare/>}/>
