@@ -66,7 +66,7 @@ const Login = (props: loginProps) => {
     }
 
     const copyLink = (id: string) => {
-        navigator.clipboard.writeText(`https://blue-sky-0e47a0403.2.azurestaticapps.net/collection/${id}`)
+        navigator.clipboard.writeText(`https://mango-cliff-0ac4f4f03.4.azurestaticapps.net/collection/${id}`)
             .then(() => setCopied(true))
             .catch((error) => console.error(error));
         setTimeout(() => {

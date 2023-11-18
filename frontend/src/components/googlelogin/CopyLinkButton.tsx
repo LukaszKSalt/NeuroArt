@@ -10,7 +10,7 @@ export const CopyLinkButton = (props: CopyLinkButtonProps) => {
     const [copied, setCopied] = useState(false);
 
     function copyLink() {
-        navigator.clipboard.writeText(`https://blue-sky-0e47a0403.2.azurestaticapps.net/image/${props.id}`)
+        navigator.clipboard.writeText(`https://mango-cliff-0ac4f4f03.4.azurestaticapps.net/image/${props.id}`)
             .then(() => {
                 setCopied(true);
                 props.onCopy(props.id);
