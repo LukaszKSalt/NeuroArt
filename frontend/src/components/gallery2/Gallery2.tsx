@@ -31,16 +31,18 @@ const Gallery2 = () => {
 
     useEffect(() => {
         if (quantity) {
-            const randomIndices: React.SetStateAction<number[]> = [];
-            while (randomIndices.length < 4) {
-                const randomIndex = Math.floor(Math.random() * quantity);
-                if (!randomIndices.includes(randomIndex)) {
-                    randomIndices.push(randomIndex);
-                }
+            const randomIndices: number[] = [];
+            const availableIndices = Array.from({ length: quantity }, (_, index) => index);
+    
+            while (randomIndices.length < 4 && availableIndices.length > 0) {
+                const randomIndex = availableIndices.splice(Math.floor(Math.random() * availableIndices.length), 1)[0];
+                randomIndices.push(randomIndex);
             }
+    
             setActiveImages(randomIndices);
         }
     }, [quantity]);
+    
 
     const nextImage = (event: React.MouseEvent) => {
         event.preventDefault()
